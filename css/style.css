@@ -53,6 +53,7 @@ table {
 	margin: 0 auto;
 	background-color: #080808;
 	font-family: 'Josefin Sans', sans-serif;
+	overflow-x: hidden;
 }
 
 .center{
