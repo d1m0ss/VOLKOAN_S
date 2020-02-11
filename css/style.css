@@ -67,17 +67,36 @@ font-family: 'Josefin Sans', sans-serif; */
 /* Header_drop_menu */
 
 .dropmenu{
-	display: none;
+	display: flex;
+	position: fixed;
 	align-items: center;
 	justify-content: center;
 	height: 100vh;
+	width: 100%;
 	flex-direction: column;
 	text-align: center;
-	background-image: url('../img/dropmenu.png');
+	background: rgba(0, 0, 0, 0.5);
+	background-position-x: center;
+	transform: translateY(-100%);
+	transition: 0.5s;
+	z-index: 1;
+}
+
+.contblur{
+	filter: blur(50px);
+}
+
+.dropmenu_active{
+	transform: translateY(0%);
 }
 
 .dropmenu ul{
 	padding-bottom: 125px;
+}
+
+header .dbtn2{
+	position: relative;
+	bottom: 135px;
 }
 
 .dropmenu ul li a{
@@ -92,16 +111,25 @@ font-family: 'Josefin Sans', sans-serif; */
 }
 
 .dropmenu svg{
-	position: relative;
-	bottom: 135px;
 	font-size: 61px;
 	color: #ffffff;
+}
+
+header .dropper{
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	padding-top: 50px;
+	bottom: -10%;
+	z-index: 1;
 }
 
 /* Header_drop_menu */
 /* 1_BOX */
 .container1{
 	height: 100vh;
+	transition: 0.5s;
 }
 
 .container1 .yellow{
@@ -109,14 +137,6 @@ font-family: 'Josefin Sans', sans-serif; */
 	height: 100%;
 	background-color: #fcb301;
 	position: absolute;
-}
-
-.container1 .dropper{
-	position: absolute;
-	display: flex;
-	justify-content: center;
-	width: 100%;
-	padding-top: 50px;
 }
 
 .container1 .scroller{
@@ -165,6 +185,7 @@ font-family: 'Josefin Sans', sans-serif; */
 	left: -45px;
 	top: 2px;
 	background-repeat: no-repeat;
+	overflow: hidden;
 }
 
 .container1 .main .stats{
@@ -184,6 +205,7 @@ font-family: 'Josefin Sans', sans-serif; */
 .container2{
 	background-image: url('../img/s650.png');
 	color: #ffffff;
+	transition: 0.5s;
 }
 
 .container2 h2{
@@ -227,6 +249,7 @@ font-family: 'Josefin Sans', sans-serif; */
 	background-image: url('../img/unfasvulcan.png');
 	color: #ffffff;
 	background-position-x: center;
+	transition: 0.5s;
 }
 
 .container3 h2{
@@ -285,6 +308,7 @@ font-family: 'Josefin Sans', sans-serif; */
 	background-repeat: no-repeat;
 	background-position-x: right;
 	background-position-y: center;
+	transition: 0.5s;
 }
 
 .container4 h2{
@@ -334,6 +358,10 @@ font-family: 'Josefin Sans', sans-serif; */
 
 
 /* 5_BOX */
+
+.container5{
+	transition: 0.5s;
+}
 
 .container5 .i1 p{
 	color: #aeb0b5;
@@ -400,6 +428,7 @@ font-family: 'Josefin Sans', sans-serif; */
 	height: 1px;
 	background-color: #2c2c2c;
 	margin-bottom: 50px;
+	margin-top: 65px;
 }
 
 .foot_foter a{
