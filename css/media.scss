@@ -1,0 +1,54 @@
+@media(max-width: 1200px){
+    .container5{
+        .foot_flex{
+            flex-direction: column;
+            .i2{
+                p{
+                    padding-left: 0;
+                }
+            }
+        }
+        .foot_foter{
+            .itm1{
+                margin-right: 1%;
+                padding-right: 1%;
+                border-right: 1px solid #fff;
+            }
+            .itm2{
+                margin-right: 1%;
+                padding-right: 1%;
+                border-right: 1px solid #fff;
+            }
+            .itm3{
+                margin-right: 1%;
+                padding-right: 1%;
+                border-right: 1px solid #fff;
+            }
+            .itm4{
+                margin-right: 1%;
+                padding-right: 1%;
+                border-right: 1px solid #fff;
+            }
+        }
+    }
+}
+@media(max-width: 696px){
+    .container1{
+        .main{
+            h1{
+                font-size: 60px;
+                left: 0;
+            }
+            .VULCAN_S{
+                width: 318px;
+                height: 225px;
+                .stats{
+                    width: 285px;
+                    height: 226px;
+                    left: 27%;
+                    bottom: 3%;
+                }
+            }
+        }
+    }
+}
