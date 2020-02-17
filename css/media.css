@@ -1,32 +1,40 @@
 @media (max-width: 1200px) {
   .container5 .foot_flex {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    position: relative;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .container5 .foot_flex .i1 {
+    margin-left: 1%;
+  }
+  .container5 .foot_flex .i2 {
+    margin: auto;
+    position: relative;
   }
   .container5 .foot_flex .i2 p {
     padding-left: 0;
   }
-  .container5 .foot_foter .itm1 {
-    margin-right: 1%;
-    padding-right: 1%;
-    border-right: 1px solid #fff;
+  .container5 .foot_foter {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
-  .container5 .foot_foter .itm2 {
-    margin-right: 1%;
-    padding-right: 1%;
-    border-right: 1px solid #fff;
-  }
-  .container5 .foot_foter .itm3 {
-    margin-right: 1%;
-    padding-right: 1%;
-    border-right: 1px solid #fff;
-  }
+  .container5 .foot_foter .itm1,
+  .container5 .foot_foter .itm2,
+  .container5 .foot_foter .itm3,
   .container5 .foot_foter .itm4 {
-    margin-right: 1%;
-    padding-right: 1%;
-    border-right: 1px solid #fff;
+    margin: 0 auto;
+    padding: 0 8px;
+  }
+}
+
+@media (max-width: 789px) {
+  .container5 .foot_flex .i2 p {
+    display: inline-table;
+    width: 50px;
+    margin-right: 35px;
+  }
+  .container5 span {
+    margin-top: 125px;
   }
 }
 
@@ -44,6 +52,35 @@
     height: 226px;
     left: 27%;
     bottom: 3%;
+  }
+}
+
+@media (max-width: 610px) {
+  .container5 .foot_flex .send_email .form-control {
+    width: 255px;
+  }
+  .container5 .foot_foter {
+    position: relative;
+  }
+  .container5 .foot_foter .itm1 {
+    position: relative;
+    margin: 0 auto;
+  }
+  .container5 .foot_foter .itm2 {
+    position: relative;
+    margin: 0 auto;
+  }
+  .container5 .foot_foter .itm3 {
+    position: relative;
+    margin: 0 auto;
+  }
+  .container5 .foot_foter .itm4 {
+    position: absolute;
+    bottom: -80%;
+    left: 30%;
+  }
+  .container5 .afoot p {
+    padding-top: 285px;
   }
 }
 /*# sourceMappingURL=media.css.map */
